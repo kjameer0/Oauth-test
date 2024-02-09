@@ -1,7 +1,7 @@
 import { useState, useEffect, createContext, useCallback } from "react";
 import axios from "axios";
 const serverUrl = process.env.REACT_APP_SERVER_URL;
-export const AuthContext = createContext("");
+export const AuthContext = createContext();
 axios.defaults.withCredentials = true;
 
 const AuthContextProvider = ({ children }) => {
